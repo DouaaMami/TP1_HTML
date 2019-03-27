@@ -2,23 +2,28 @@
     <head>
             <meta charset="utf-8"/>
             <title> Ajouter TO DO</title>
+            <link rel="stylesheet" href="../../FormaLab_HTML_1/css/bootstrap.min.css">
     </head>
-    <body>
-            <img src="../images/logo.jpg" alt="Logo" width="80">
-            <hr>
+    <body class="p-3 mb-2 bg-light text-dark">
+            <img src="../images/logo.jpg" alt="Logo" width="90" class="rounded mx-auto d-block">
+            <br>
             <a href="home.html"> 
-                    <button> Accueil </button>
+                    <button class="btn btn-primary btn-lg btn-block btn btn-success"> Accueil </button>
              </a>
-             <hr>
+             <br>
              <a href="connexion.html"> 
-                    <button> Déconnexion </button>
+                    <button class="btn btn-primary btn-lg btn-block "> Déconnexion </button>
              </a>
              <hr>
-             <h4> Description </h4>
+             <h4 class="text-danger font-weight-bold"> Description </h4>
              <form name="test" method="" action="">
-                    <input type="text" name="bla"  placeholder="Email"> <br>
-                    <input type="Submit" value="Ajouter" />
-            <input type="reset" value="Effacer" />
+                        <div class="form-group row">
+                                        <label for="inputEmail3" class="col-sm-2 col-form-label">To Do</label>
+                                        <div class="col-sm-10">
+                                          <input type="text" class="form-control" id="inputEmail3" placeholder="what do you have to do">
+                                        </div>
+                                        <input type="Submit" value="Ajout" class="btn btn-primary" />
+                                        <input type="reset" value="Effacer" class="btn btn-primary" />
                     </form>
     </body>
 </html>
